@@ -8,7 +8,7 @@ test:
 	@echo ""
 	@echo ""
 	@echo "Testing Python 2.x"
-	@(cd CppHeaderParser/test; python test_CppHeaderParser.py)
+	@(cd CppHeaderParser/test; python2 test_CppHeaderParser.py)
 	@echo ""
 	@echo ""
 	@echo "Testing Python 3.x"

@@ -35,7 +35,7 @@ setup(
     author_email = 'jashuac@bellsouth.net',
     url = 'http://senexcanis.com/open-source/cppheaderparser/',
     description = DESCRIPTION,
-    long_description = open('README.txt').read(),
+    long_description = open('README.md').read(),
     license = 'BSD',
     platforms = 'Platform Independent',
     packages = ['CppHeaderParser'],

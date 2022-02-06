@@ -1,0 +1,4 @@
+CppHeaderParser.egg-info/
+**.pyc
+CppHeaderParser/__pycache__/
+dist/
