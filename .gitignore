@@ -2,3 +2,6 @@ CppHeaderParser.egg-info/
 **.pyc
 CppHeaderParser/__pycache__/
 dist/
+CppHeaderParser/CppHeaderParser3.py
+CppHeaderParser/test/test_CppHeaderParser3.py
+README.html

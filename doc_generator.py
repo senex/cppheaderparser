@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Generate documenation
 # * README.md
 # * README.html
@@ -22,7 +22,7 @@ def gen_readme_txt():
     import cgi
     f = open("templates/README.md", "r").read()
     sampleClass = open("CppHeaderParser/examples/SampleClass.h").read()
-    readSampleClass = open("CppHeaderParser/examples/readSampleClass.py").read()
+    readSampleClass = open("CppHeaderParser/examples/readSampleClass.py", "r").read()
     
     f = f.replace("{SAMPLE_CLASS_H}", "    " + sampleClass.replace("\n", "\n    "))
     f = f.replace("{READ_SAMPLE_CLASS_PY}", "    " + readSampleClass.replace("\n", "\n    "))
@@ -38,10 +38,10 @@ def gen_readme_txt():
 
 def get_sample_class_output():
     import subprocess
-    return str(subprocess.Popen(["python", "readSampleClass.py"],
+    return subprocess.Popen(["python3", "readSampleClass.py"],
         stdout=subprocess.PIPE,
         cwd="CppHeaderParser/examples"
-        ).communicate()[0])
+        ).communicate()[0].decode('ascii', 'ignore')
 
 
 
